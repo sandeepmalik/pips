@@ -1,4 +1,4 @@
-qbes
+pips
 ====
 
-Queue Based Execution System
+Pipeline Processing System

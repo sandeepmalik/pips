@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="QBES Test Suite">
+    <test name="FB Import Test" preserve-order="true">
+        <packages>
+            <package name="com.open.qbes.tests.core"/>
+        </packages>
+        <classes>
+            <class name="com.open.qbes.tests.userimport.FBImportTest"/>
+            <class name="com.open.qbes.tests.userimport.MomentsImportTest"/>
+        </classes>
+    </test>
+</suite>

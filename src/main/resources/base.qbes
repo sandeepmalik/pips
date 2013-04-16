@@ -1,0 +1,15 @@
+pre-configured-queues=false
+system.use.db.pool=true
+system.http.pool.schemes.http=80
+system.http.pool.schemes.https=443
+system.http.pool.default.max.per.route=10
+system.http.pool.max.total=200
+#system.http.pool.hosts=https://someurl.com
+#system.db.url=jdbc:postgresql://host:port/schema
+#system.db.user=some_user
+#system.db.password=passwd
+#system.db.max.connection=5
+#system.db.min.connection=1
+system.config.prefix=base
+system.http.use-connection-pool=true
+system.qbes.jobs.packages=com.open.qbes.jobs,com.open.qbes.api.http,com.open.jobs.userimport

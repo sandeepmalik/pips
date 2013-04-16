@@ -1,0 +1,21 @@
+<web-app>
+    <display-name>QBES</display-name>
+    <description>Queue Based Execution System</description>
+    <servlet>
+        <servlet-name>jersey</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.resourceConfigClass</param-name>
+            <param-value>com.open.qbes.api.http.QBESApplicationConfig</param-value>
+        </init-param>
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jersey</servlet-name>
+        <url-pattern>/*</url-pattern>
+    </servlet-mapping>
+</web-app>
